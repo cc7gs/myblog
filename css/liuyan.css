@@ -1,0 +1,86 @@
+html,body{
+	height: 100%;
+}
+body{
+	font-size: 16px;
+	font-weight: 300;
+	color:#888;
+	line-height: 30px;
+	background: url(../images/liuyan.jpg) 0 0 no-repeat;
+}
+.content-form{
+	width: 50%;
+	margin:40px auto 0;
+	background-color: #fff;
+}
+.form-top{
+	padding:0 15px;
+}
+.form-top::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.form-top-left{
+float: left;
+width: 75%;
+padding-top: 25px;
+
+}
+.form-top-left h3{
+	font-size: 22px;
+	font-weight: 300;
+	color:#555;
+
+}
+.form-top-right{
+float: left;
+width: 25%;
+padding-top:5px;
+font-size: 66px;
+color:#ddd;
+line-height: 100px;
+text-align: center;
+}
+.form-bottom{
+	padding: 30px;
+	background-color: #eee;
+	text-align: left;
+}
+.form-group{
+	margin-bottom: 15px;
+}
+input[type='text'],textarea{
+	height: 50px;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin:0;
+	padding:0 20px;
+	background-color: #f8f8f8;
+	border:3px solid #ddd;
+	outline: none;
+	transition: all 0.3s;
+}
+.form-bottom textarea{
+	height: 100px;
+}
+input[type='text']:focus,textarea:focus{
+	border: 3px solid #ccc;
+	background-color: #fff;
+}
+button.btn{
+	height: 50px;
+	line-height: 50px;
+	background-color: #19b9e7;
+	border: 0;
+	padding: 0 20px;
+	margin:0;
+	color:#fff;
+	border-radius: 4px;
+	transition: all .3s;
+}
+button.btn:hover{
+	opacity:0.6;
+	color:#fff;
+}

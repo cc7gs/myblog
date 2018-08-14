@@ -1,0 +1,130 @@
+/*时光机*/
+html{
+	background-color: #fff;
+}
+.rj-head{
+	padding: 20px 0;
+}
+.bloglist{
+	width: 100%;
+	background: url(../images/rj_bg.jpg) repeat-y 900px 0;
+}
+.arrow-box{
+	width: 830px;
+	box-shadow: 0px 1px 0px rgba(255,255,255,.1);
+	border-radius: 5px;
+}
+.arrow-box li{
+	background-color:#f8f8f8;
+	padding:20px 0;
+	margin:20px 0;
+	position: relative;
+}
+
+.arrow-box .sy:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.arrow-box .sy img{
+	width: 150px;
+	margin: 0 20px;
+	float: left;
+}
+.arrow-box .sy p{
+	font-size: 12px;
+	line-height: 24px;
+	color:#756F71;
+	padding: 0 20px 20px;
+}
+.dataview{
+	position: absolute;
+	left: 920px;
+	top:20px;
+	width: 125px;
+	font-size: 12px;
+	line-height: 30px;
+	background-color: #5EA51B;
+	border-radius: 0px 40px;
+	text-align: center;
+	color:#fff; 	
+}
+/*circle*/
+	.arrow-box li::after{
+		content: "";
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		position: absolute;
+		left: 895px;
+		top:20px;
+		background-color: #ccc;
+		border: 2px solid #fff;
+		transition: all 0.5s;
+	}
+/*三角*/
+	.arrow-box li::before{
+		content: "";
+		width:0px;
+		height:0px;
+		border-style:solid;
+		border-width: 0 0 20px 22px;
+		border-color: transparent #fff;
+		position: absolute;
+		left: 830px;
+		top:25px;
+	}
+	
+	.arrow-box li:hover{
+		background: #f4f2f2;
+		text-shadow: #f7f7f7 1px 1px 1px;
+
+	}
+	.arrow-box li:hover .sy p{
+		color:#333;
+	}
+	.arrow-box li:hover::before{
+		 border-color: transparent #CECCCD;
+
+
+	}
+	.arrow-box li:hover::after{
+		border: 2px solid #fff;
+		background: #5EA51B;
+	}
+.page{
+	margin:20px 0;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+}
+.page a b{
+	color:#999;
+}
+.page a{
+	color:#F33;
+	margin:0 2px;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	border-radius: 50%;
+	text-align:center;
+	border: 1px solid #999;
+	display: inline-block;
+}
+.page>b,.page a:hover{
+	margin:0 2px;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	border-radius: 50%;
+	text-align:center;
+	display: inline-block;
+	background: #333;
+	color:#fff;
+}
+.page a:first-child{
+	border: 1px solid #999;
+
+}

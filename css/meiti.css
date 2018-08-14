@@ -1,0 +1,133 @@
+@media screen and (min-width: 1024px) and (max-width: 1190px) {
+	#nav,article{
+		width: 90%;
+		overflow: hidden;
+	}
+	.tuijian>ul>li{
+		width: 26%;
+	}
+}
+
+@media  (min-width: 960px) and (max-width: 1023px) {
+	#nav,article{
+		width: 90%;
+		overflow: hidden;
+	}
+	#startlist li{
+		padding: 0 20px;
+	}
+	.tuijian>ul>li{
+		width: 25.7%
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#nav,article{
+		width: 96%;
+		overflow: hidden;
+	}
+	#startlist li{
+		padding: 0 15px;
+	}
+	.tuijian>ul>li{
+		width: 27%
+	}
+	article .pics ul li:nth-child(2){
+		margin:0 0 0 12px;
+	}
+	.rightbox{
+		display: none
+	}
+	.leftbox{
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#nav,article{
+		width: 96%;
+		overflow: hidden;
+	}
+	#navh{
+		display: block;
+	}
+	#startlist{
+		display: none;
+		width: 100%;
+	}
+	#startlist li{
+		box-sizing: border-box;
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding-left: 20px;
+	}
+	.tuijian >ul>li{
+		width: 28%;
+		padding:10px;
+	}
+	.pics ul li i{
+		height: 100px;
+	}
+	.pics ul li img{
+		height: 100%
+	}
+	.pics ul li:nth-child(2){
+		margin-left: 8px;
+	}
+	.pics ul li span{
+		display: none;
+	}
+	.rightbox{
+		display: none;
+	}
+	.leftbox{
+		width: 100%;
+	}
+	/*share 分页*/
+	.pagelist a{
+		margin:0;
+		border: 0;
+		padding: 5px 0px;
+	}
+	/*live*/
+	.infos .share .zan{
+		float:none;
+		margin: auto;
+	}
+	.news-infos img{
+		max-width: 400px;
+	}
+	.infos .share .dasbox{
+		display: none;
+	}
+	/*日记*/
+	.bloglist{
+		background-position: 330px 0;
+	}
+	.arrow-box{
+		width: 100%;
+	}
+	.arrow-box li{
+		width: 70%;
+		padding:10px 0;
+
+	}
+	.arrow-box .sy img{
+		margin:0 10px;
+		float: none;
+	}
+	
+	.dataview{
+		left: 340px;
+		width: 100px;
+	}
+	.arrow-box li::after{
+		left: 325px;
+	}
+	.arrow-box li::before{
+		left: 310px;
+		border-width:  0 0 10px 12px;
+	}
+}

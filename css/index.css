@@ -7,6 +7,7 @@ header{
 	top:0;
 	z-index: 100;
 }
+
 .line46{
 	height:46px;
 	width: 100%;
@@ -74,8 +75,11 @@ header{
 }
 #startlist>li{
 	float: left;
-	padding: 0 0 0 40px;
+	padding-left:40px;
 	font-size: 16px;
+}
+#startlist>li:hover{
+	background-color: #000;
 }
 /*导航条结束*/
 
@@ -84,21 +88,22 @@ article{
 	width: 1100px;
 	margin:auto;
 }
+
 article::after{
 	content:"";
 	display: block;
 	clear: both;
 }
-article>.pics{
+.pics{
 	margin:20px 0 0;
 	padding-bottom: 20px
 }
-article>.pics ul::after{
+.pics ul::after{
 	content: "";
 	display: block;
 	clear: both;
 }
-article>.pics>ul>li{
+.pics>ul>li{
 	float: left;
 	width: 32.3%;
 	display: block;
@@ -106,11 +111,11 @@ article>.pics>ul>li{
 	border-radius: 5px;
 	position: relative;
 }
-article>.pics >ul>li>i{
+.pics >ul>li>i{
 	display: block;
 	height: 155px;
 }
-article>.pics>ul li:nth-child(2){
+.pics>ul li:nth-child(2){
 	margin:0 0 0 17px;
 }
 .pics>ul>li:nth-child(3){
@@ -572,13 +577,13 @@ footer a{
 .newsview{
 	padding: 20px;
 }
-.infos .newtitle{
+ .newtitle{
 	font-size: 14px;
 	line-height: 24px;
 	height: 24px;
 	border-bottom: 2px solid #000;
 }
-.infos .newtitle>a{
+ .newtitle>a{
 	font-weight: normal;
 }
 
@@ -694,7 +699,8 @@ background: url(../images/date.png) left center no-repeat;
 .zan a,.dasbox a{
 	color:#fff;
 }
-.infos .share>.hide-box{
+
+.infos .share .hide-box{
 	display: none;
 	z-index: 555;
 	background: #666;
@@ -706,7 +712,8 @@ background: url(../images/date.png) left center no-repeat;
 	bottom: 0;
 
 }
-.infos .share>.dashang-box{
+
+.infos .share .dashang-box{
 	display: none;
 	width: 430px;
 	padding: 40px 10px;
@@ -719,6 +726,7 @@ background: url(../images/date.png) left center no-repeat;
 	margin-left: -225px;
 	margin-top: -255px;
 	border:1px dotted #dedede;
+	
 }
 
 .share>.dashang-box img{
@@ -747,16 +755,16 @@ background: url(../images/date.png) left center no-repeat;
 	font-size: 16px;
 }
 .dashang-pay{
-	width: 140px;
+	width: 150px;
 	padding:10px;
 	border: 4px solid #339999;
 	margin:0 auto;
 	border-radius: 3px;
-	height: 140px;
+	height: 150px;
 }
 .dashang-pay img{
-	width: 140px;
-	height: 140px;
+	width: 150px;
+	height: 150px;
 	display: block;
 	text-align: center;
 }
