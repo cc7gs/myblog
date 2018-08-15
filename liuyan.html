@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="css/comm.css">
-	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/liuyan.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/meiti.css">
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -25,43 +26,51 @@
 				<li><a href="share.html">WEB分享</a></li>
 				<li><a href="study.html">学无止境</a></li>
 				<li><a href="live.html">慢生活</a></li>
-				<li><a href="content.html">时光机</a></li>
+				<li><a href="note.html">时光机</a></li>
 				<li><a href="liuyan.html">留言板</a></li>
 			</ul>
 			<!-- 导航条结束 -->
 		</div>
 	</header>
+	
 	<!-- 给固定的导航条占据位置 -->
 	<div class="line46"></div>
-<article>
-	<div class="content-form">
-		<div class="form-top">
-			<div class="form-top-left">
-				<h3>Contact Me</h3>
-				<p>Fill in the form below to send us a message</p>
+
+	<div class="contact-email">
+	<div class="wrap">
+		<div class="content-form">
+			<div class="form-top">
+				<div class="form-top-left">
+					<h3>Contact Me</h3>
+					<p>Fill in the form below to send us a message</p>
+				</div>
+				<div class="form-top-right">
+					<i class="fa fa-envelope"></i>
+				</div>
 			</div>
-			<div class="form-top-right">
-				<i class="fa fa-envelope"></i>
+			<div class="form-bottom">
+				<form action="" method="post">
+				<div class="form-group">
+					<label for="contact-email"></label>
+					<input type="text" name="email" placeholder="Email..." class="contact-email" id="contact-email">
+				</div>
+				<div class="form-group">
+					<label for="contact-subject"></label>
+					<input type="text" name="email" placeholder="Subject..." class="contact-subject" id="contact-subject">
+				</div>
+				<div class="form-group">
+					<label for="contact-message"></label>
+					<textarea type="text" name="email" placeholder="Message..." class="contact-message" id="contact-message"></textarea>
+				</div>
+					<button type="submit" class="btn">Send Message</button>
+				</form>
 			</div>
-		</div>
-		<div class="form-bottom">
-			<form action="" method="post">
-			<div class="form-group">
-				<label for="contact-email"></label>
-				<input type="text" name="email" placeholder="Email..." class="contact-email" id="contact-email">
-			</div>
-			<div class="form-group">
-				<label for="contact-subject"></label>
-				<input type="text" name="email" placeholder="Subject..." class="contact-subject" id="contact-subject">
-			</div>
-			<div class="form-group">
-				<label for="contact-message"></label>
-				<textarea type="text" name="email" placeholder="Message..." class="contact-message" id="contact-message"></textarea>
-			</div>
-				<button type="submit" class="btn">Send Message</button>
-			</form>
 		</div>
 	</div>
-</article>
+	</div>		
+	
+<footer>
+		<p>Design ny <a href="#">吴晨个人博客</a>  陕ICP备18013227号-1</p>
+</footer>
 </body>
 </html>

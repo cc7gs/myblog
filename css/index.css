@@ -63,6 +63,18 @@ header{
 .navicon:after{
 	margin-top: 10px;
 }
+/*改变下拉列表状态*/
+.open .navicon{
+	background:none;
+}
+.open .navicon:before{
+	margin-top:0;
+	transform: rotate(45deg);
+}
+.open .navicon:after{
+	margin-top:0;
+	transform: rotate(-45deg);
+}
 /*导航条开始*/
 
 #startlist::after{
@@ -75,7 +87,7 @@ header{
 }
 #startlist>li{
 	float: left;
-	padding-left:40px;
+	padding: 0 20px;
 	font-size: 16px;
 }
 #startlist>li:hover{
@@ -159,6 +171,7 @@ article::after{
 /*个人推荐开始*/
 .tuijian{
 	width: 100%;
+	margin-top: 20px;
 	background-color: #fff;
 	border-radius: 10px;
 }
@@ -699,7 +712,17 @@ background: url(../images/date.png) left center no-repeat;
 .zan a,.dasbox a{
 	color:#fff;
 }
-
+.paydashang{
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.paydashang img{
+	width: 200px;
+	margin:auto;
+}
 .infos .share .hide-box{
 	display: none;
 	z-index: 555;

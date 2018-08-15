@@ -41,6 +41,9 @@
 	.leftbox{
 		width: 100%;
 	}
+	.dataview{
+		width: 100px;
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -102,32 +105,139 @@
 	.infos .share .dasbox{
 		display: none;
 	}
+	.paydashang{
+		display: block;
+	}
+
+
 	/*日记*/
-	.bloglist{
-		background-position: 330px 0;
-	}
-	.arrow-box{
-		width: 100%;
-	}
+	
 	.arrow-box li{
-		width: 70%;
+		width: 80%;
 		padding:10px 0;
 
+	}
+	.bloglist{
+		background-position: 69% 0;
 	}
 	.arrow-box .sy img{
 		margin:0 10px;
 		float: none;
 	}
-	
+	.arrow-box .sy p{
+		padding:10px;
+	}
 	.dataview{
-		left: 340px;
 		width: 100px;
 	}
-	.arrow-box li::after{
-		left: 325px;
-	}
 	.arrow-box li::before{
-		left: 310px;
 		border-width:  0 0 10px 12px;
 	}
+	/*留言*/
+	.contact-email>.wrap{
+		width: 80%;
+	}
+	.content-form{
+		width: 90%;
+	}
 }
+@media screen and (max-width: 479px) {
+	#nav,article{
+		width: 96%;
+	}
+	#navh{
+		display: block;
+	}
+	#startlist{
+		display: none;
+		width: 100%;
+	}
+	#startlist li{
+		box-sizing: border-box;
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding-left: 20px;
+	}
+	.pics ul>li{
+		width: 100%;
+	}
+	.pics>ul li:nth-child(2){
+		margin:10px 0;
+	}
+	.rightbox{
+		display: none;
+	}
+	.leftbox{
+		width:100%;
+	}
+	.title span{
+		display: none;
+	}
+	.tuijian>ul>li{
+		width: 45%;
+		padding:5px;
+	}
+	/*share 分页*/
+	.pagelist a{
+		margin:0;
+		border: 0;
+		padding: 5px 0px;
+	}
+	/*study*/
+	.bloginfo .blogpic{
+		width: 100%;
+		max-height: 120px;
+		float: none;
+		margin:auto;
+	}
+	.autorinfo .viewnum,.autorinfo .yw{
+		display: none;
+	}
+	/*live*/
+	.infos .share .zan{
+		float:none;
+		margin: auto;
+	}
+	.news-infos img{
+		max-width: 400px;
+	}
+	.infos .share .dasbox{
+		display: none;
+	}
+	.paydashang{
+		display: block;
+	}
+	/*日记*/
+	
+	.arrow-box li{
+		width: 80%;
+		padding:10px 0;
+
+	}
+	.bloglist{
+		background-position: 69% 0;
+	}
+	.arrow-box .sy img{
+		margin:0 10px;
+		float: none;
+	}
+	.arrow-box .sy p{
+		padding:10px;
+	}
+	.dataview{
+		width: 100px;
+	}
+	.arrow-box li::before{
+		border-width:  0 0 10px 12px;
+	}
+	/*留言*/
+	.contact-email>.wrap{
+		width: 90%;
+	}
+	.content-form{
+		width: 100%;
+	}
+}
+
