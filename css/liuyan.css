@@ -50,6 +50,10 @@ font-size: 66px;
 color:#ddd;
 line-height: 100px;
 text-align: center;
+position: relative;
+}
+.envelope{
+	color:#ccc;
 }
 .form-bottom{
 	padding: 30px;
