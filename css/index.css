@@ -106,7 +106,8 @@ article::after{
 	display: block;
 	clear: both;
 }
-.pics{
+/*首页头部图片*/
+/*.pics{
 	margin:20px 0 0;
 	padding-bottom: 20px
 }
@@ -148,14 +149,158 @@ article::after{
 	right: 0;
 	display: block;
 	padding:0 15px;
-	/*让超出范围的文字用...显示*/
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	line-height: 30px;
 }
 .pics ul li:hover img{
 	transform: scale(1.05);
+}*/
+
+
+/*轮播图片*/
+
+.pictures{
+	width:100%;
+	position: relative;
+	margin:20px 0;
 }
+.slider,.liner-item{
+	padding-bottom: 30%;
+
+}
+.slider>.liner-item{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.liner-item+ .liner-item{
+	opacity: 0;
+}
+.focus-group{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	z-index: 10;
+}
+.focus-group ul{
+	width: 150px;
+	margin:0 auto;
+}
+.focus-group>ul::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.focus-group>ul>li{
+	float: left;
+	width:15px;
+	height:15px;
+	margin-right: 15px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.focus-group .focus-item{
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.focus-item2,.focus-item3,.focus-item4,.focus-item5{
+	opacity: 0;
+}
+
+/*选中第一个*/
+.focus-item{
+	background-color: #339999;
+}
+.liner-item,.focus-item{
+	animation-duration: 20s;
+}
+/*让延迟执行动画 第一张默认被选中(直接跳到一秒)*/
+.liner-item1,.focus-item1{
+	animation-delay: -1s;
+}
+.liner-item2,.focus-item2{
+	animation-delay: 3s;
+}
+.liner-item3,.focus-item3{
+	animation-delay: 7s;
+}
+.liner-item4,.focus-item4{
+	animation-delay: 11s;
+}
+.liner-item5,.focus-item5{
+	animation-delay: 15s;
+}
+
+@keyframes fade{
+	0%{
+		opacity: 0;
+		z-index: 2;
+	}
+	5%{
+		opacity: 1;
+		z-index: 1;
+	}
+	20%{
+		opacity: 1;
+		z-index: 1;
+	}
+	25%{
+		opacity: 0;
+		z-index: 0;
+	}
+	100%{
+		opacity: 0;
+		z-index: 0;
+	}
+}
+/*设置背景图片*/
+.liner-item1{
+	background: url(../images/wgs.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+.liner-item2{
+	background: url(../images/lb1.jpg)  no-repeat;
+	background--size:cover;
+}
+.liner-item3{
+	background: url(../images/lb2.jpg) no-repeat;
+	background-size: cover;
+}
+.liner-item4{
+	background: url(../images/lb3.jpg) no-repeat;
+	background-size: cover;
+}
+
+.liner-item5{
+	background: url(../images/lb4.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*左边盒子开始*/
 .leftbox::after{
@@ -171,7 +316,6 @@ article::after{
 /*个人推荐开始*/
 .tuijian{
 	width: 100%;
-	margin-top: 20px;
 	background-color: #fff;
 	border-radius: 10px;
 }
@@ -439,14 +583,13 @@ h2.ab-title::after{
 .ab-img{
 	width: 100px;
 	height: 100px;
-	overflow: hidden;
 	border-radius: 50px;
 	margin:auto;
+	overflow: hidden;
+	background:url(../images/me.jpg) 50% 50% no-repeat;
+	background-size:cover;
 }
-.ab-img img{
-	width: 100px;
-	height: 100px;
-}
+
 .ab-info{
 	line-height: 30px;
 	padding: 10px;
