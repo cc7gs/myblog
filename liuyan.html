@@ -4,13 +4,26 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title >吴晨个人博客|关于web前端开发的博客分享</title>
 	<link rel="stylesheet" href="css/comm.css">
 	<link rel="stylesheet" href="css/liuyan.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/meiti.css">
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="shortcut icon"  href="images/title.ico">
 		<script src="js/comm.js"></script>
+		<style>
+			body{
+				overflow: hidden;
+			}	
+			.snow{
+				color:#339999;
+				position: absolute;
+				top:0;
+				left: 10px;
+				transition: all 5s;
+			}
+		</style>
 </head>
 <body>
 	<header>
@@ -20,17 +33,40 @@
 			<h2 id="navh">
 				<span class="navicon"></span>
 			</h2>
-			<!-- 导航条开始 -->
-			<ul id="startlist">
-				<li><a href="index.html" target="_self">首页</a></li>
-				<li><a href="about.html" target="_self">关于我</a></li>
-				<li><a href="share.html">WEB分享</a></li>
-				<li><a href="study.html">学无止境</a></li>
-				<li><a href="live.html">慢生活</a></li>
-				<li><a href="note.html">时光机</a></li>
-				<li><a href="liuyan.html">留言板</a></li>
+			
+			<!-- 3d导航条 -->
+			<ul id="startlist" class="nav-menu">
+				<li><a href="index.html" class="three-d active">
+					Home
+					<span class="three-d-box"><span class="front">Home</span><span class="back">Home</span></span>
+				</a></li>
+				<li><a href="about.html" class="three-d">
+					关于我
+					<span class="three-d-box"><span class="front">关于我</span><span class="back">关于我</span></span>
+				</a></li>
+				<li><a href="share.html" class="three-d">
+					WEB分享
+					<span class="three-d-box"><span class="front">WEB分享</span><span class="back">WEB分享</span></span>
+				</a></li>
+				<li><a href="study.html" class="three-d">
+					学无止境
+					<span class="three-d-box"><span class="front">学无止境</span><span class="back">学无止境</span></span>
+				</a></li>
+				<li><a href="live.html" class="three-d">
+					慢生活
+					<span class="three-d-box"><span class="front">慢生活</span><span class="back">慢生活</span></span>
+				</a></li>
+				<li><a href="note.html" class="three-d">
+					时光机
+					<span class="three-d-box"><span class="front">时光机</span><span class="back">时光机</span></span>
+				</a>
+				</li>
+				<li><a href="liuyan.html" class="three-d">
+					留言板
+					<span class="three-d-box"><span class="front">留言板</span><span class="back">留言板</span></span>
+				</a></li>
 			</ul>
-			<!-- 导航条结束 -->
+			<!-- 3d导航条结束 -->
 		</div>
 	</header>
 	
@@ -74,5 +110,5 @@
 		<p>Design ny <a href="#">吴晨个人博客</a>  陕ICP备18013227号-1</p>
 </footer>
 </body>
-<script src="js/snow.js"></script>
+<!-- <script src="js/snow.js"></script> -->
 </html>

@@ -1,8 +1,7 @@
-	//雪景图
-	function snow(){
+function snow(){
 		var flake=document.createElement('i');
-		flake.className="fa fa-snowflake-o";
-		var documentHeight=window.screen.height;
+		flake.className="fa fa-snowflake-o snow";
+		var documentHeight=window.innerHeight;
 		var documentWidth=window.innerWidth;
 
 		// console.log(documentHeight+"-"+documentWidth);
@@ -22,7 +21,7 @@
 					opacity:${startOpacity};
 					font-size:${flakeSize}px;
 					top:-25px;
-					transition: all ${durationTime}ms ease-in-out;
+					transition: all ${durationTime}ms;
 				`;
 			document.body.appendChild(CloneFlake);
 			// document.body.appendChild(flake);
@@ -30,7 +29,7 @@
 			setTimeout(function(){
 				CloneFlake.style.cssText+=`
 					left:${endLeft}px;
-					top:3000px;
+					top:${documentHeight}px;
 					opacity:${endOpacity};
 				`;
 
@@ -43,4 +42,4 @@
 		},createtime);
 		
 	}
-	snow();
+		snow();

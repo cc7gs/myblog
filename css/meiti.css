@@ -13,9 +13,7 @@
 		width: 90%;
 		overflow: hidden;
 	}
-	#startlist li{
-		padding: 0 20px;
-	}
+	
 	.tuijian>ul>li{
 		width: 25.7%
 	}
@@ -26,8 +24,13 @@
 		width: 96%;
 		overflow: hidden;
 	}
-	#startlist li{
-		padding: 0 15px;
+	
+	#startlist li a{
+		padding:15px;
+	}
+	.front,
+	.back{
+		padding:15px;
 	}
 	.tuijian>ul>li{
 		width: 27%
